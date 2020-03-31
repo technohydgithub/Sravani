@@ -1,0 +1,23 @@
+Variables and functions can be accessed before or after their definitions.
+Doing so 
+Will always return 'undefined' for variables. 
+Functions are called normally for regular functions
+
+Eg : 
+console.log(a); // undefined
+var a = 2;
+console.log(a); // 2
+
+demo(); // Allowed and prints hi
+function demo(){
+    console.log(`hi`);
+}
+
+Function expressions can be accesed only after their expression
+
+Eg: 
+addition(2, 4); will throw 'addition is not a function' error
+var addition = function add(m, n){
+    console.log(m + n);
+}
+addition(5, 7); //12

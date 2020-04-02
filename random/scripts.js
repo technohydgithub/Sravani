@@ -20,7 +20,7 @@ function checkEligibility(gender, dob){
     if((gender == "male") && (age > 18 && age <21)){
         console.log("%c Eligible to vote" + "%c but not marriage", "color:green", "color:red");
     }
-    else if((gender == "male" || age > 21) || (gender == "female" && age > 18)){
+    else if((gender == "male" && age > 21) || (gender == "female" && age > 18)){
         console.log("%c Eligible to vote and marriage", "color:green");
     }else{
         console.log("%c Not eligible to vote or marry", "color:red");

@@ -6,7 +6,9 @@ for(let l = 0; l < limit; l++){
     arr.push(num);
 }
 console.log(arr);
-for (let i = 0; i < arr.length; i++) {
+let i; 
+let arrLen = arr.length;
+for (i = 0; i < arrLen; i++) {
   if (uArr.indexOf(arr[i]) == -1) {
     uArr.push(arr[i]);
   }
